@@ -67,7 +67,7 @@ drawerLinks.className = 'drawer-links';
 drawerLinks.setAttribute('aria-label', 'Mobile navigation');
 const drawerEnquiry = document.createElement('a');
 drawerEnquiry.className = 'button drawer-enquiry';
-drawerEnquiry.href = navigation.querySelector('a[href$="contact.html"]').getAttribute('href');
+drawerEnquiry.href = new URL('contact.html', drawerBrand.href).href;
 drawerEnquiry.textContent = 'Enquire now';
 const drawerDescription = document.createElement('p');
 drawerDescription.className = 'drawer-description';
